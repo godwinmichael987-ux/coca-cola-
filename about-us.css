@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.clear {
+  clear: both;
+}
+.navigation a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: black;
+}
+.navigation {
+  background-color: brown;
+  padding: 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.navigation ul {
+  float: right;
+}
+.navigation h1 {
+  float: left;
+}
+.navigation li {
+  float: left;
+  margin: 0rem 2rem;
+  list-style: none;
+}
+.main-section {
+  font-size: 5.5rem;
+}
+.explanation {
+  font-size: 2rem;
+}
+.success {
+  font-size: 2rem;
+}
+.goal {
+  font-size: 2rem;
+}
+.vow {
+  font-size: 2rem;
+}
+.explanation + p {
+  font-size: 1rem;
+}
+.success + p {
+  font-size: 1rem;
+}
+.goal + P {
+  font-size: 1rem;
+}
+.vow + p {
+  font-size: 1rem;
+  color: white;
+}
+.main-section {
+  background-image: url(/image/ai4.png);
+  background-size: cover;
+  background-position: center;
+  height: 70rem;
+  padding-top: 3rem;
+  color: white;
+  font-style: italic;
+}
+#details {
+  color: white;
+  text-align: center;
+  background-color: #000000;
+}
+#details div {
+  padding-top: 7rem;
+}
+.about-us {
+  /* width: 60rem; */
+  margin: 0rem auto 0rem auto;
+}
+.footer-section {
+  padding-bottom: 5rem;
+}
+
+footer {
+  display: flex;
+  gap: 5rem;
+  padding: 6rem 8rem 3.5rem 8rem;
+  background-color: #000000;
+  color: whitesmoke;
+}
+.footer-section a {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.footer-section li {
+  list-style: none;
+  padding-bottom: 1.5rem;
+}
+.body {
+  width: 25%;
+}
+.body p {
+  /* color:; */
+  font-size: 1.5rem;
+}
+.body h4 {
+  font-size: 3rem;
+  color: red;
+  padding-bottom: 3.5rem;
+}
+.section {
+  margin-right: 2rem;
+}
+.Quick {
+  list-style: none;
+}
+.stay-update p {
+  color: whitesmoke;
+  font-size: 1.25rem;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.stay-update input {
+  padding: 1rem;
+  border-radius: 0.5rem white;
+  outline: none;
+}
+.footer-section {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  color: red;
+}
+.footer-section h5 {
+  font-size: 2rem;
+  list-style: none;
+  padding-bottom: 3.5rem;
+  padding-top: 0.5rem;
+}
+hr {
+  color: white;
+}
+.copy-right {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.copy-right p {
+  display: flex;
+  font-size: 1.25rem;
+}
+.copy-right a {
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  gap: 0rem;
+}
+.circle {
+  display: flex;
+  gap: 1.5rem;
+}
+.privacy:hover a {
+  color: rgb(101, 58, 58);
+}
+.terms:hover a {
+  color: rgb(101, 58, 58);
+}
+.cookies:hover a {
+  color: rgb(101, 58, 58);
+}
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.wrapper input {
+  background: black;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  width: 100%;
+  color: white;
+}
+.wrapper .arrow {
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  height: 100%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.wrapper .arrow:hover {
+  color: white;
+  background-color: red;
+}
+.footer-container {
+  padding: 2rem;
+  background-color: black;
+  padding-bottom: 3rem;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+.icon .button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  background-color: white;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  padding-right: 3.5rem;
+}
+.icon .button:hover {
+  width: 20rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: white;
+}
+.icon .button i {
+  min-width: 5rem;
+  text-align: center;
+  margin-right: 1rem;
+  padding-left: 2rem;
+}
+.button span {
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  margin-left: 0;
+  transition:
+    opacity 0.2s ease,
+    margin-left 0.3s ease,
+    visiblity 0.2s ease;
+}
+.icon .button:hover span {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0.5rem;
+}
+.button:nth-child(1):hover {
+  background-color: #1877f2;
+  color: white;
+}
+.button:nth-child(2):hover {
+  background-color: white;
+  color: red;
+}
+.button:nth-child(3):hover {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  color: white;
+}
+.button:nth-child(4):hover {
+  background-color: #000000;
+  color: aliceblue;
+  text-shadow:
+    0.3rem 0.3rem hsl(350, 100%, 60%),
+    -0.3rem -0.3rem hsl(199, 92%, 62%);
+  border: 0.1rem solid white;
+}
+.button:nth-child(4):hover span {
+  text-shadow: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .footer-section { y
+  padding-bottom: 5rem;
+}
+
+footer {
+  display: flex;
+  gap: 5rem;
+  padding: 6rem 8rem 3.5rem 8rem;
+  background-color: #000000;
+  color: whitesmoke;
+}
+.footer-section a {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+.footer-section li {
+  list-style: none;
+  padding-bottom: 1.5rem;
+}
+.body {
+  width: 25%;
+}
+.body p {
+  /* color:; */
+/* font-size: 1.5rem;
+} */
+.body h4 {
+  font-size: 3rem;
+  color: red;
+  padding-bottom: 3.5rem;
+}
+.section {
+  margin-right: 2rem;
+}
+.Quick {
+  list-style: none;
+}
+.stay-update p {
+  color: whitesmoke;
+  font-size: 1.25rem;
+  padding: 1rem 0rem 1rem 0rem;
+}
+.stay-update input {
+  padding: 1rem;
+  border-radius: 0.5rem white;
+  outline: none;
+}
+.footer-section {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  color: red;
+}
+.footer-section h5 {
+  font-size: 2rem;
+  list-style: none;
+  padding-bottom: 3.5rem;
+  padding-top: 0.5rem;
+}
+hr {
+  color: white;
+}
+.copy-right {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.copy-right p {
+  display: flex;
+  font-size: 1.25rem;
+}
+.copy-right a {
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  gap: 0rem;
+}
+.circle {
+  display: flex;
+  gap: 1.5rem;
+}
+.privacy:hover a {
+  color: rgb(101, 58, 58);
+}
+.terms:hover a {
+  color: rgb(101, 58, 58);
+}
+.cookies:hover a {
+  color: rgb(101, 58, 58);
+}
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.wrapper input {
+  background: black;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  width: 100%;
+  color: white;
+}
+.wrapper .arrow {
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  height: 100%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.wrapper .arrow:hover {
+  color: white;
+  background-color: red;
+}
+.footer-container {
+  padding: 2rem;
+  background-color: black;
+  padding-bottom: 3rem;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+.icon .button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  background-color: white;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+.icon .button:hover {
+  width: 20rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: white;
+}
+.icon .button i {
+  min-width: 5rem;
+  text-align: center;
+  margin-right: 1rem;
+  padding-right: 3.5rem;
+}
+.button span {
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  margin-left: 0;
+  transition:
+    opacity 0.2s ease,
+    margin-left 0.3s ease,
+    visiblity 0.2s ease;
+}
+.icon .button:hover span {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0.5rem;
+}
+.button:nth-child(1):hover {
+  background-color: #1877f2;
+  color: white;
+}
+.button:nth-child(2):hover {
+  background-color: white;
+  color: red;
+}
+.button:nth-child(3):hover {
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  color: white;
+}
+.button:nth-child(4):hover {
+  background-color: #000000;
+  color: aliceblue;
+  text-shadow:
+    0.3rem 0.3rem hsl(350, 100%, 60%),
+    -0.3rem -0.3rem hsl(199, 92%, 62%);
+  border: 0.1rem solid white;
+}
+.button:nth-child(4):hover span {
+  text-shadow: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
