@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.our-service {
+  /* background-image: url(image/can2.png); */
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  color: white;
+}
