@@ -7,11 +7,43 @@ html {
   font-size: 62.5%;
 }
 .our-service {
-  /* background-image: url(image/can2.png); */
+  background-image: url(image/can2.png);
   height: 30rem;
   background-size: cover;
   background-position: center;
+  color: white;
+  padding: 5rem;
 }
 h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  width: 45%;
+}
+button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: red;
   color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 3.5rem;
+  border-radius: 1rem;
+}
+.our-service :nth-child(3) {
+  color: red;
+}
+.offering {
+  text-align: center;
+}
+.offering p {
+  text-align: center;
+  margin-left: 32rem;
+}
+.area {
+  display: flex;
 }
